@@ -458,7 +458,7 @@ slice := array[5:7]
 
 例如，当向一个capacity为5，且length也为5的Slice再次追加1个元素时，就会发生扩容，如下图所示：
 
-![](images\image-20230705002658257.png)
+![](https://github.com/Pumnn1ayLee/Go_Note/blob/main/images/image-20230705002658257.png)
 
 扩容操作只关心容量，会把原Slice数据拷贝到新Slice，追加数据由append在扩容结束后完成
 
