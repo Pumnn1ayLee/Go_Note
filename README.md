@@ -444,7 +444,7 @@ slice := array[5:7]
 
 使用数组来创建Slice时，Slice将与原数组共用一部分内存
 
-![](D:\githubstudy\Go_Note\images\image-20230705002305381.png)
+![](images\image-20230705002305381.png)
 
 切片从数组array[5]开始，到数组array[7]结束（不含array[7]），即切片长度为2，数组后面的内容都作为切 片的预留内存，即capacity为5
 
@@ -458,7 +458,7 @@ slice := array[5:7]
 
 例如，当向一个capacity为5，且length也为5的Slice再次追加1个元素时，就会发生扩容，如下图所示：
 
-![](D:\githubstudy\Go_Note\images\image-20230705002658257.png)
+![](images\image-20230705002658257.png)
 
 扩容操作只关心容量，会把原Slice数据拷贝到新Slice，追加数据由append在扩容结束后完成
 
