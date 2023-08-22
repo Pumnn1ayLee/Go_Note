@@ -432,7 +432,7 @@ type slice struct{
 slice := make([]int,5,10)
 ```
 
-![2d753d620467ea531ba7f769a948b95](https://github.com/Pumnn1ayLee/Go_Note/blob/main/images/image-20230705002305381.png)
+![2d753d620467ea531ba7f769a948b95](images\image-20230705002305381.png)
 
 该Slice长度为5，即可以使用下标slice[0] ~ slice[4]来操作里面的元素，capacity为10，表示后续向 slice添加新的元素时可以不必重新分配内存，直接使用预留内存即可。
 
